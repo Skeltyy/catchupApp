@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "463743692146",
+    "firebase_url": "https://catchup2-eda2d.firebaseio.com",
+    "project_id": "catchup2-eda2d",
+    "storage_bucket": "catchup2-eda2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463743692146:android:cf10ba1ea1c062ae",
+        "android_client_info": {
+          "package_name": "com.askel.catchup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463743692146-q6bkehek57pla6tgtcu05pmm2dsce3gh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.askel.catchup",
+            "certificate_hash": "e56ac9fdbf47171c8b87f69dda01e0da3d197809"
+          }
+        },
+        {
+          "client_id": "463743692146-87vvkpb3gjm0841h3gdf3qe3o64vh3iu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRUpQAXbURfM2B6q7WrNNwdG5kPI8Z0zI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463743692146-87vvkpb3gjm0841h3gdf3qe3o64vh3iu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
