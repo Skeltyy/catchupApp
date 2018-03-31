@@ -1,7 +1,9 @@
 package com.askel.catchup;
 
+import android.database.Cursor;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -18,7 +20,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class ContactActivity extends AppCompatActivity {
+public class ContactActivity extends AppCompatActivity{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide

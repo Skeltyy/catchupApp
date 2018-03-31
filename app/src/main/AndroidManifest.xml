@@ -27,6 +27,8 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+        <activity android:name=".ContactsFragment"
+            android:label="ContactsFragment"></activity>
     </application>
 
 </manifest>
