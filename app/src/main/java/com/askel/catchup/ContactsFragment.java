@@ -17,7 +17,7 @@ import java.util.List;
 
 public class ContactsFragment extends ContactActivity  {
 
-        
+
 
     }
 
