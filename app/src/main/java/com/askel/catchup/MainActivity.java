@@ -84,6 +84,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id== R.id.logout) {
+            finish();
+            startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+            return true;
+        }
+
         if (id == R.id.action_settings) {
             startActivity(new Intent(MainActivity.this, SettingsActivity.class));
             return true;
@@ -94,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickMessage(View view){
         startActivity(new Intent(MainActivity.this, ContactActivity.class));
     }
+
 
     /**
      * A placeholder fragment containing a simple view.
