@@ -85,22 +85,24 @@ public class MessageScreen extends AppCompatActivity {
             mMsgList.scrollToPosition(mMsgList.getAdapter().getItemCount());
         }
     }
-    /*@Override
+    @Override
     protected void onStart(){
         super.onStart();
-        FirebaseRecyclerAdapter <Message, MessageViewHolder> FBRA=new FirebaseRecyclerAdapter<Message, MessageViewHolder>(
-                Message.class,
+        FirebaseRecyclerAdapter <com.askel.catchup.Message, MessageViewHolder> FBRA=new FirebaseRecyclerAdapter<com.askel.catchup.Message, MessageViewHolder>(
+                com.askel.catchup.Message.class,
                 R.layout.singlemessagelayout,
                 MessageViewHolder.class,
                 mDatabase
         ) {
             @Override
-            protected void populateViewHolder(MessageViewHolder viewHolder, Message model, int position) {
-                viewHolder.setContent(model.(com.askel.catchup.(Message).getContent();
+            protected void populateViewHolder(MessageViewHolder viewHolder, com.askel.catchup.Message model, int position) {
+                viewHolder.setContent(model.getContent());
                 viewHolder.setUsername(model.getUsername());
             }
         };
-        mMsgList.setAdapter(FBRA);*/
+        mMsgList.setAdapter(FBRA);
+    }
+
     public static class MessageViewHolder extends RecyclerView.ViewHolder{
         View mView;
         public MessageViewHolder(View itemView){
