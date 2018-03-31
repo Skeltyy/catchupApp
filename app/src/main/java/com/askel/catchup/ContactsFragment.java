@@ -15,10 +15,14 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContactsFragment extends ContactActivity  {
-
+public class ContactsFragment extends ContactActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_contact);
 
 
     }
+}
 
 
