@@ -18,7 +18,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity android:name=".ContactsActivity"
+            android:label="Contacts"
+            android:parentActivityName=".ContactsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name=".ContactsActivity"
+                android:value="com.askel.catchup">
+
+            </meta-data>
+
+
+        </activity>
+
     </application>
 
 </manifest>
+
