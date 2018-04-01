@@ -35,6 +35,8 @@
             android:label="@string/title_activity_settings"></activity>
         <activity android:name=".RegisterActivity"
             android:label="Register"></activity>
+        <activity android:name=".MessageScreen"></activity>
+
 
     </application>
 

@@ -43,14 +43,19 @@ public class RegisterActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
+                        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
                         String user_id=mAuthM.getCurrentUser().getUid();
                         DatabaseReference current_user_db=mDatabaseM.child(user_id);
                         current_user_db.child("Name").setValue(name_content);
-                        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+
                     }
                 }
             });
         }
 
+    }
+    public void returnToLoginButtonClicked(View view){
+        startActivity(new Intent(RegisterActivity.this, LoginActivity.class
+        ));
     }
 }
