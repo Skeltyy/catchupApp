@@ -31,8 +31,13 @@
             android:label="ContactsFragment"></activity>
 
         <activity
+            android:name=".MessageActivity"
+            android:label="Message"></activity>
+
+        <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"></activity>
+
         <activity android:name=".RegisterActivity"
             android:label="Register"></activity>
 

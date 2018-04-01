@@ -2,7 +2,6 @@ package com.askel.catchup;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 
-public class MessageScreen extends AppCompatActivity {
+public class MessageActivity extends AppCompatActivity {
     private EditText editMessage;
     private DatabaseReference mDatabase;
     private RecyclerView mMsgList;
@@ -51,7 +50,7 @@ public class MessageScreen extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
                 if (firebaseAuth.getCurrentUser() == null) {
-                    startActivity(new Intent(MessageScreen.this, RegisterActivity.class
+                    startActivity(new Intent(MessageActivity.this, RegisterActivity.class
                     ));
                 }
             }
@@ -76,7 +75,6 @@ public class MessageScreen extends AppCompatActivity {
                     });
                 }
 
-
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
 
@@ -88,14 +86,14 @@ public class MessageScreen extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        FirebaseRecyclerAdapter <com.askel.catchup.Message, MessageViewHolder> FBRA=new FirebaseRecyclerAdapter<com.askel.catchup.Message, MessageViewHolder>(
-                com.askel.catchup.Message.class,
+        FirebaseRecyclerAdapter <Message, MessageViewHolder> FBRA=new FirebaseRecyclerAdapter<Message, MessageViewHolder>(
+                Message.class,
                 R.layout.singlemessagelayout,
                 MessageViewHolder.class,
                 mDatabase
         ) {
             @Override
-            protected void populateViewHolder(MessageViewHolder viewHolder, com.askel.catchup.Message model, int position) {
+            protected void populateViewHolder(MessageViewHolder viewHolder, Message model, int position) {
                 viewHolder.setContent(model.getContent());
                 viewHolder.setUsername(model.getUsername());
             }

@@ -2,26 +2,31 @@ package com.askel.catchup;
 
 public class Message {
     public String content, username;
-    public Message(){
+
+    public Message() {
 
     }
-    public Message(String content, String username){
-        this.content=content;
-        this.username=username;
+
+    public Message(String content, String username) {
+        this.content = content;
+        this.username = username;
     }
-    public String getUsername(){
+
+    public String getUsername() {
         return username;
     }
-    public void setUsername(String username){
-        this.username=username;
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getContent(){
+    public String getContent() {
 
         return content;
     }
-    public void setContent(String content){
-        this.content=content;
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }
 
