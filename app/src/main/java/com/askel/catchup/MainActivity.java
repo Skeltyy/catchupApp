@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, ContactActivity.class));
     }
     public void onClickMessageScreen(View view){
-        startActivity(new Intent(MainActivity.this, MessageScreen.class));
+        startActivity(new Intent(MainActivity.this, MessageActivity.class));
     }
 
     /**
