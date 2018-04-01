@@ -72,10 +72,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void onLogoutOptionClicked(View view){
-        startActivity(new Intent(MainActivity.this, RegisterActivity.class));
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -86,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if(id== R.id.logout) {
             finish();
-            startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
             return true;
         }
 
@@ -100,7 +96,9 @@ public class MainActivity extends AppCompatActivity {
     public void onClickMessage(View view){
         startActivity(new Intent(MainActivity.this, ContactActivity.class));
     }
-
+    public void onClickMessageScreen(View view){
+        startActivity(new Intent(MainActivity.this, MessageScreen.class));
+    }
 
     /**
      * A placeholder fragment containing a simple view.
